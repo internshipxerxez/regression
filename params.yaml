@@ -4,7 +4,7 @@ base:
   target_col : charges
 
 data_source:
-  s3_source: source_data/insurance.csv
+  s3_source: data/raw/insurance_internship.csv
 
 load_data:
   raw_dataset_csv: data/raw/insurance_internship.csv
