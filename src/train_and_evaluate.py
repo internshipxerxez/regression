@@ -45,6 +45,37 @@ def train_and_evaluate(config_path):
 
     ########################################
 
+    lr = ElasticNet(alpha=alpha, l1_ratio=l1_ratio, random_state=random_state)
+    lr.fit(train_x, train_y)
+
+    predicted_qualities = lr.predict(test_x)
+
+    (rmse, mae, r2) = eval_metrics(test_y, predicted_qualities)
+
+    #print("ElasticNet Model (alpha = %f, l1_ratio=%f):" %(alpha, l1_ratio))
+
+    #print("RMSE:%s" %rmse)
+    #print("MAE:%s" %mae)
+    #print("R2 Score:%s" %r2)
+
+    score_files = config["reports"]["score"]
+    params_files = config["reports"]["params"]
+
+    with open(score_files,"w") as f:
+        scores = {
+            "rmse": rmse,
+            "mae" : mae,
+            "r2" : r2
+        }
+        json.dump(scores, f, indent=4)
+
+    with open(params_files,"w") as f:
+        params = {
+            "alpha": alpha,
+            "l1_ratio" : l1_ratio,
+        }
+        json.dump(params, f, indent=4)
+
     ################################
 
     os.makedirs(model_dir, exist_ok=True)
