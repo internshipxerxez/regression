@@ -1,0 +1,34 @@
+base:
+  project: mlops-insurance
+  random_state : 20
+  target_col : charges
+
+data_source:
+  s3_source: source_data/insurance.csv
+
+load_data:
+  raw_dataset_csv: data/raw/insurance_internship.csv
+
+split_data:
+  train_path: data/processed/train_insurance_internship.csv
+  test_path : data/processed/test_insurance_internship.csv
+  test_size: 0.2
+
+estimators:
+  ElasticNet:
+    params:
+      alpha: 0.7
+      l1_ration: 0.8
+
+model_dirs: models
+
+reports:
+  params: reports/params.json
+  score: reports/scores.json
+
+mlflow_coonfig:
+  artifacts_dir: artifacts
+  experiment_name: ElasticNet_Expenses
+  run_name: mlops
+  registered_model_name: ElasticNetMedicalExpenses
+  remote_server_ruti: http://127.0.0.1:5000
