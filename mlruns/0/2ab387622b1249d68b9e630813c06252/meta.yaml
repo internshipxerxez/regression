@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/ahama/Desktop/internship/mlruns/0/2ab387622b1249d68b9e630813c06252/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2ab387622b1249d68b9e630813c06252
+run_name: sedate-robin-910
+run_uuid: 2ab387622b1249d68b9e630813c06252
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698652229131
+status: 1
+tags: []
+user_id: ahama

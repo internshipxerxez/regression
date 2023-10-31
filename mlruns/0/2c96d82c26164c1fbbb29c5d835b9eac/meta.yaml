@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/ahama/Desktop/internship/mlruns/0/2c96d82c26164c1fbbb29c5d835b9eac/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2c96d82c26164c1fbbb29c5d835b9eac
+run_name: whimsical-fish-381
+run_uuid: 2c96d82c26164c1fbbb29c5d835b9eac
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698651537660
+status: 1
+tags: []
+user_id: ahama

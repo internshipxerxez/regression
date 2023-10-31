@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/ahama/Desktop/internship/mlruns/0/f68ba6ca81b64f32a98f45e7695e13bb/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f68ba6ca81b64f32a98f45e7695e13bb
+run_name: nosy-bear-42
+run_uuid: f68ba6ca81b64f32a98f45e7695e13bb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698652153329
+status: 1
+tags: []
+user_id: ahama

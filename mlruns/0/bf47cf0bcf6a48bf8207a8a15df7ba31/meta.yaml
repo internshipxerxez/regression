@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/ahama/Desktop/internship/mlruns/0/bf47cf0bcf6a48bf8207a8a15df7ba31/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: bf47cf0bcf6a48bf8207a8a15df7ba31
+run_name: lyrical-snipe-381
+run_uuid: bf47cf0bcf6a48bf8207a8a15df7ba31
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698651146260
+status: 1
+tags: []
+user_id: ahama

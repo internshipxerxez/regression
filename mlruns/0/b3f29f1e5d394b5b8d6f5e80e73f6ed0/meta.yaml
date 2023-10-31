@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/ahama/Desktop/internship/mlruns/0/b3f29f1e5d394b5b8d6f5e80e73f6ed0/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b3f29f1e5d394b5b8d6f5e80e73f6ed0
+run_name: persistent-mare-196
+run_uuid: b3f29f1e5d394b5b8d6f5e80e73f6ed0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698651883184
+status: 1
+tags: []
+user_id: ahama

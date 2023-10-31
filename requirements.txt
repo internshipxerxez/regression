@@ -8,3 +8,4 @@ argparse
 jupyterlab
 sklearn
 mlflow
+django

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/ahama/Desktop/internship/mlruns/0/9f346b0b11034822a1fc711f45e40f48/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9f346b0b11034822a1fc711f45e40f48
+run_name: honorable-hound-250
+run_uuid: 9f346b0b11034822a1fc711f45e40f48
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698650982791
+status: 1
+tags: []
+user_id: ahama
