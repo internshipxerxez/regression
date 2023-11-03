@@ -31,4 +31,4 @@ mlflow_config:
   experiment_name: ElasticNet_Expenses
   run_name: mlops
   registered_model_name: ElasticNetMedicalExpenses
-  remote_server_uri: http://127.0.0.1:5000
+  remote_server_uri: https://dagshub.com/ahamadashiq95/regression.mlflow

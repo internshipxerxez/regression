@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 import os
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -20,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-5du8j%o(*@19o39*t%=n*0-s3t3gdh13fnzua^vauuf=qvagvp'
+SECRET_KEY = 'django-insecure-psbgztimh=%twn8hy!fl^3t4k*m4!+e^&ium7=)f1ssc#c9ni5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'firstApp',
+    'firstApp.apps.FirstappConfig',
 ]
 
 MIDDLEWARE = [
@@ -74,10 +75,25 @@ WSGI_APPLICATION = 'webapp.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
+'''DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'internship',
+        'USER' : 'postgres',
+        'PASSWORD' : 'Tanzeem@12345',
+        'HOST' : 'localhost',
+        'PORT' : '5432',
+    }
+}'''
+
+DATABASE = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.environ.get('DB_NAME'),
+        'USER' : os.environ.get('DB_USER'),
+        'PASSWORD' : os.environ.get('DB_PASS'),
+        'HOST' : os.environ.get('DB_HOST'),
+        #'PORT' : '5432',
     }
 }
 
