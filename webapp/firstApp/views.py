@@ -28,6 +28,3 @@ def result(request):
     b.save()
 
     return render(request, "index.html", {'answer':answer})
-
-
-    
