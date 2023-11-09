@@ -7,6 +7,14 @@ from pprint import pprint
 import joblib
 import os
 
+
+import pandas as pd
+import numpy as np
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score, classification_report
+from sklearn.preprocessing import StandardScaler
+
 def log_production_model(config_path):
     config=read_params(config_path)
     mlflow_config=config["mlflow_config"]

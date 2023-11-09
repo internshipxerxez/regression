@@ -15,9 +15,9 @@ EXPOSE 8000
 RUN python -m venv /py
 
 RUN /py/bin/pip install -r /requiremnets_docker.txt
+
 RUN /py/bin/pip install --upgrade pip
 RUN python -m pip install --upgrade pip
-
 
 #RUN apk add --update --no-cache --virtual linux-headers
 #RUN adduser --disable-password --no-create-home webapp
@@ -25,6 +25,5 @@ RUN python -m pip install --upgrade pip
 ENV PATH="/py/bin:$PATH"
 
 #USER app
-
 
 #USER webapp
