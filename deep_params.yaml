@@ -4,25 +4,25 @@ base:
 data_source:
   data_src: source_data
 
-load_data:
+load_data_deep:
   num_classes: 4
-  raw_data: source_data
+  raw_data: source_data/
   preprocessed_data: data/processed
   full_path: internship/source_data
 
 train_split:
-  split_ration: 80
+  split_ratio: 80
 
 model:
   name: VGG19
-  trainable: False
-  train_path: data/processed/train
-  test_path: data/processed/test
+  trainable: True
+  train_path: data/processed/Training
+  test_path: data/processed/Testing
   image_size: [255,255]
   loss: 'categorical_crossentropy'
   optimizer: 'adam'
   metrics: ['accuracy']
-  epochs: 1
+  epochs: 2
   save_dir: models/trained.h5
 
 img_augment:
