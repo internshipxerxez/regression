@@ -37,7 +37,7 @@ img_augment:
 model_dir: models
 
 mlflow_config_deep:
-  artifacts_deep_dir: artifacts
+  artifacts_deep_dir: artifacts_deep
   experiment_name: Deep_Learning_VGG19
   run_name: deep_mlops
   registered_deep_model_name: Deep_Learning
