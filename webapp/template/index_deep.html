@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MRI REPORT</title>
+<style>
+    body {
+        background-color: powderblue;
+        font-family: Arial, sans-serif;
+    }
+
+    h1 {
+        color: #FF0000;
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    input[type="file"] {
+        border: 2px solid #008cba;
+        border-radius: 4px;
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+
+    input[type="file"]:hover {
+        background-color: #f0f0f0;
+    }
+
+    input[type="submit"] {
+        background-color: #4caf50;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+    img {
+        display: block;
+        margin-top: 20px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    p {
+        text-align: center;
+    }
+</style>
+</head>
+<body style="background-color:powderblue">
+
+<center><h1><span style="color:#FF0000">MRI Prediction Application </span></h1>
+    <center><h3>Please Upload the Image</h3></center> <br>
+
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        <input type="file" name="upload" accept=".jpg, .jpeg, .png, .jfif" />
+
+        <input type="submit" value="submit" />
+        
+    </form>
+
+    {% if file_url %}
+    <br>
+    <br>
+    <img src="{{ file_url }}" alt="Uploaded Image" width="255" height="255">
+    <p>{{ pred }}</p>
+    {% endif %}
+
+        
+        
+
+        <!-- <center><button type="submit" name="" value="submit" class="button button1">Submit</button></center>
+        <center><button type="reset" name="" value="reset" class="button button1">Reset</button></center> -->
+    
+
+    <!--{% if answer %}
+
+    <center><h2 style="color:#FF6600"> The Medical Expenses is {{answer}} Dollars</h2>
+    <h3 style="color:#009900">Thanks for using Medical App</h3></h2>
+    </center>
+
+    {% endif %} -->
+
+</center>
+</body>
+</html>
